@@ -1,0 +1,111 @@
+.container {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+}
+
+.image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.loginBox {
+   top: 0;
+   right: 0;
+   width: 35%;
+   height: 100%;
+   background-color: #485473;
+   position: absolute;
+   opacity: 0.9;
+
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+
+   transition: width 0.3s ease-in-out;
+}
+
+.loginBox:hover {
+   width: 40%;
+}
+
+.titleContainer {
+   grid-row-start: 2;
+   grid-row-end: 3;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.title {
+   color: white;
+   font-size: 40px;
+   opacity: 1;
+}
+
+.slogan {
+   color: white;
+}
+
+/* -------------------- Buttons -------------------- */
+
+.buttonContainer { /* contains both login buttons */
+   grid-row-start: 3;
+   grid-row-end: 4;
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   align-items: center;
+   /* margin-top: -40px; */
+}
+
+.logo {
+   height: 20px;
+   width: 20px;
+   margin-right: 0.6em;
+}
+
+.button {
+   height: 40px;
+   font-size: 15px;
+   /* width: 240px; */
+   margin: 0.25em;
+   display: flex;
+   justify-content: center;
+}
+
+.chesscomBtn {
+   /* light: 81b64c */
+   /* dark: 5d9948 */
+   background-color: #538f3d;
+   border: 2px solid #81b64c;
+   transition: all 0.3s ease;
+}
+
+.chesscomBtn:hover {
+   background-color: #3c7a25;
+   border: 2px solid #5d9948;
+}
+
+.chesscomBtn:active {
+   background-color: #326b1e !important;
+   border: 2px solid #3c7a25 !important;
+}
+
+.lichessBtn {
+   background-color: gray;
+   border: 2px solid darkgray;
+   transition: all 0.3s ease;
+}
+
+.lichessBtn:hover {
+   background-color: dimgray;
+   border: 2px solid gray;
+}
+
+.lichessBtn:active {
+   background-color: #585858 !important;
+   border: 2px solid dimgray !important;
+}
