@@ -7,6 +7,12 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+
+  display: flex;
+}
+
+.mb-4 {
+  margin: 1em;
 }
 
 /* :root {

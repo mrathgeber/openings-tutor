@@ -18,7 +18,7 @@ const Navbar = () => {
 
    return (
      <nav className={styles.navbar}>
-
+      <Link href='/..' className={styles.logout}><i className='bi bi-box-arrow-left'></i></Link>
       <ul className={styles.ul}>
          {navItems.map((item, index) => (
             <li key={index} className={styles.navElement}>
