@@ -1,13 +1,24 @@
 'use client';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
-import chessImage from './../images/chess.jpg'
-import chesscomLogo from './../images/chesscom-logo.png'
-import lichessLogo from './../images/lichess-logo.png'
+import chessImage from './../images/chess.jpg';
+import chesscomLogo from './../images/chesscom-logo.png';
+import lichessLogo from './../images/lichess-logo.png';
 
-import styles from "./Login.module.css"
+import styles from "./Login.module.css";
 
 const LoginBox = () => {
+   const router = useRouter();
+
+   const handleChesscomLogin = () => {
+      router.push('/dashboard');
+   };
+   
+   const handleLichessLogin = () => {
+      router.push('/dashboard');
+   };
+
    return (
       <div className={styles.loginBox}>
          <div className={styles.titleContainer}>
@@ -15,11 +26,11 @@ const LoginBox = () => {
             <p className={styles.slogan}>Move <b>by</b> Move</p>
          </div>
          <div className={styles.buttonContainer}>
-            <button className={`btn btn-primary ${styles.button} ${styles.chesscomBtn}`}>
+            <button onClick={handleChesscomLogin} className={`btn btn-primary ${styles.button} ${styles.chesscomBtn}`}>
                <Image className={styles.logo} src={chesscomLogo} alt='Chess.com Logo' />
                Continue with Chess.com
             </button>
-            <button className={`btn btn-primary ${styles.button} ${styles.lichessBtn}`}>
+            <button onClick={handleLichessLogin} className={`btn btn-primary ${styles.button} ${styles.lichessBtn}`}>
                <Image className={styles.logo} src={lichessLogo} alt='Lichess Logo' />
                Continue with Lichess
             </button>
