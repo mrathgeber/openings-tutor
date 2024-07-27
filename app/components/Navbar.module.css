@@ -1,21 +1,27 @@
 .navbar {
    display: flex;
    flex-direction: column;
-   height: 100vh;
-   width: 15vw;
+   min-height: 100vh;
+   min-width: 15vw;
    background-color: white;
    border-right: 2px solid lightgray;
    align-items: center;
 }
 
+.navBarHeader {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   border-bottom: 2px solid lightgray;
+   padding: 1em;
+}
+
 .logout {
-   align-self: flex-start;
-   margin-top: 1.5em;
-   margin-left: 1.5em;
+   margin-right: 0.4rem;
 }
 
 .ul {
-   margin-top: 100px;
+   margin-top: 1.5rem;
 }
 
 .navButton {

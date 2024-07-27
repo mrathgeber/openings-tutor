@@ -9,6 +9,8 @@
   overflow: hidden;
 
   display: flex;
+  background-color: #485473;
+  height: 100vh;
 }
 
 .mb-4 {
