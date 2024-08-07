@@ -10,9 +10,9 @@ export default function Dashboard() {
       <div className={styles.dashboardHeader}>
         <h1 className={styles.dashboardTitle}><b>Hi, Matteo</b></h1>
         <div className={styles.dashboardHeaderBar}>
-          <i class={`bi bi-gear ${styles.dashIcon}`}></i>
-          <i class={`bi bi-sliders2 ${styles.dashIcon}`}></i>
-          <i class={`bi bi-box-arrow-right ${styles.dashIcon}`}></i>
+          <i className={`bi bi-gear ${styles.dashIcon}`}></i>
+          <i className={`bi bi-sliders2 ${styles.dashIcon}`}></i>
+          <i className={`bi bi-box-arrow-right ${styles.dashIcon}`}></i>
         </div>
       </div>
     );
@@ -23,7 +23,7 @@ export default function Dashboard() {
       <div className={`card ${styles.card} ${styles[id]}`}>
           <div className={`${styles.cardBody}`}>
             <h1 className={`${styles.cardTitle}`}>{id}</h1>
-            <p>This is some text within a card body.</p>
+            <p className={styles.cardText}>This is some text within a card body.</p>
           </div>
         </div>
     );
